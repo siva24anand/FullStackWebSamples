@@ -1,10 +1,41 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Basic HTML Samples</title>
+        <title>ic HBasTML Samples</title>
+        <style>
+        .left{
+            background-color:#2196F3;
+            padding:20px;
+            float:left;
+            width:20%; /* The width is 20%, by default */
+        }
+        .right{
+            background-color:#4CAF50;
+            padding:20px;
+            float:left;
+            width:20%; /* The width is 20%, by default */
+        }
+        @media screen and (max-width:800px){
+            .left, .right{
+                width:100%;
+            }
+        }
+        </style>
     </head>
     <body>
-        <h1>Full stack samples</h1>
-        <p>Started with full stack web development</p>
+        <h1 style="color:blue; border:2px solid Tomato">UI</h1>
+        <p>Started with UI web development</p>
+        <iframe src="index.html" height="200" width="300" style="border:none" name="indexframe"></iframe>
+        <a href="https://www.w3schools.com" target="indexframe">w3schools</a>
+        <img src="https://www.w3schools.com/images/picture.jpg" alt="Mountain" style="width:300px">
+        <p style="font-size:10px">Normal Para without media</p>
+        <p style="font-size:1vw">Para with media</p>
+        <div class="left">
+            <p>left menu</p>
+        </div>
+        <div class="right">
+            <p>right menu</p>
+        </div>
+        <p>< > "'&&copy;`a&#769;&ni;&sum;</p>
     </body>
 </html>
