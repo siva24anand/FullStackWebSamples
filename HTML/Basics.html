@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta charset="UTF-8">
         <title>ic HBasTML Samples</title>
         <style>
         .left{
@@ -21,8 +22,17 @@
             }
         }
         </style>
+        <script>
+        function Result(){
+            var a = document.getElementById('a').value;
+            var b = document.getElementById('b').value;
+            var result = parseInt(a) + parseInt(b);
+            var X = document.getElementById("X");
+            X.value = result;
+        }
+        </script>
     </head>
-    <body>
+    <body onload="Result()">
         <h1 style="color:blue; border:2px solid Tomato">UI</h1>
         <p>Started with UI web development</p>
         <iframe src="index.html" height="200" width="300" style="border:none" name="indexframe"></iframe>
@@ -42,5 +52,23 @@
             <legend>Personal Information</legend>
             <input type="text" value="Siva">
         </fieldset>
+        <input list="browsers">
+        <datalist id="browsers">
+            <option value="IE"></option>
+            <option value="Chrome"></option>
+            <option value="FireFox"></option>
+        </datalist>
+        <form>
+            0
+            <input type="range" id="a" name="a" value="50" onchange="Result()">
+            100 +
+            <input type="number" id="b" name="b" value="50" onchange="Result()">
+            =
+            <output id="X" name="X" for="a b"></output>
+        </form>
+        <input type = "color" >
+        <input type="date">
+        <input type="file">
+        <input type="number" min="1" max="3">
     </body>
 </html>
